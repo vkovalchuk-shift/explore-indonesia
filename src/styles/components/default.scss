@@ -1,0 +1,25 @@
+//Main configs
+
+html {
+  min-height: 100%;
+  height: auto;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: $font-primary;
+}
+
+img {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}

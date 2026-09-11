@@ -1,0 +1,23 @@
+$sizes: (
+  'xs': 320px,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+);
+@mixin media($minmax, $media) {
+  @each $size, $resolution in $sizes {
+    @if $media == $size {
+      @if $minmax == 'max' {
+        $maxResolution: #{$resolution - 1};
+        @media only screen and (max-width: #{$maxResolution}) {
+          @content;
+        }
+      } @else if $minmax == 'min' {
+        @media only screen and (min-width: #{$resolution}) {
+          @content;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+$font-primary: "DM Sans", sans-serif;;
+$font-secondary: "Roboto", sans-serif;
+
+$color-white: #FFF;
+$color-error: #DD2242;
+$color-error-hover: darken($color-error, 8%);
+
+$transition-default: all .3s ease-in-out;
+$box-shadow-default: 0 6px 16px rgba(221, 34, 66, 0.3);

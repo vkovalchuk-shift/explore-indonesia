@@ -1,0 +1,57 @@
+.btn {
+    width: 100%;
+    cursor: pointer;
+    display: inline-block;
+    padding: 22.5px 24px;
+    background: $color-error;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-white;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    min-width: 180px;
+    text-align: center;
+    transition: $transition-default;
+
+    @include media('min', 'sm') {
+        padding: 16px 24px;
+    }
+
+    &-md {
+        min-width: 210px;
+        padding: 23px 24px;
+
+        @include media('min', 'sm') {
+            padding: 18.5px 24px;
+        }
+    }
+
+    &-lg {
+        min-width: 271px;
+        padding: 14.5px 24px;
+        font-size: 20px;
+        color: rgba($color-white, 0.8);
+
+        @include media('min', 'sm') {
+            padding: 26px 24px;
+        }
+    }
+
+    &:hover {
+        background: $color-error-hover;
+        transform: translateY(-2px);
+        box-shadow: $box-shadow-default;
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: none;
+    }
+
+    @include media('min', 'sm') {
+        width: unset;
+    }
+}
