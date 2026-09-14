@@ -1,0 +1,125 @@
+.exploring {
+    padding-top: 25px;
+    color: $color-night;
+
+    @include media('min', 'lg') {
+        padding-top: 127px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+
+    .swiper {
+        margin-bottom: 933px;
+    }
+
+    .swiper-wrapper {
+
+    }
+
+    .swiper-slide {
+        border-radius: 10px;
+        overflow: hidden;
+        height: 200px;
+
+        @include media('min', 'md') {
+            height: 257px;
+        }
+
+        img {
+            display: block;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .swiper-pagination {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 28px;
+
+        &-bullet {
+            width: 19px;
+            height: 19px;
+            margin: 0 8px;
+            background-color: $color-bullet;
+            opacity: 1;
+            transition: $transition-default;
+        }
+
+        &-bullet-active {
+            width: 50px;
+            height: 19px;
+            background: $color-error;
+            border-radius: 60px;
+        }
+    }
+
+    .arrow {
+        &-left,
+        &-right {
+            position: absolute;
+            top: 50%;
+        }
+
+        &-left {
+            left: -63px;
+        }
+
+        &-right {
+            right: -63px;
+        }
+    }
+
+    .bottom {
+        background-color: rgba($color-night, 0.9);
+        padding: 70px 0;
+        color: $color-white;
+
+        @include media('min', 'xl') {
+            padding: 201px 0 225px 0;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .description {
+            max-width: 484px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+
+            @include media('min', 'xl') {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 15px;
+            }
+        }
+
+        li {
+            max-width: 350px;
+            text-align: center;
+
+            h4 {
+                margin-bottom: 19px;
+                color: $color-error;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

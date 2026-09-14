@@ -9,11 +9,139 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
     <header>HEADER</header>
-    <main>MAIN</main>
+    <main>
+      <section id="hero" class="hero" style="background: linear-gradient(215.79deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url('../../assets/images/diego-gutierrez.webp') no-repeat 50% 50% / cover">
+        <div class="container">
+          <h1>explore <br> indonesia</h1>
+          <a href="#" class="btn btn-lg">Start travelling</a>
+
+          <div class="bottom">
+            <ul>
+              <li>
+                <div class="index">01</div>
+                <h5 class="title">Title here</h5>
+                <p class="description">
+                  Lorem ipsum dolor sit amet et amet ist ame.
+                </p>
+              </li>
+              <li>
+                <div class="index">02</div>
+                <h5 class="title">Title here</h5>
+                <p class="description">
+                  Lorem ipsum dolor sit amet et amet ist ame.
+                </p>
+              </li>
+              <li>
+                <div class="index">03</div>
+                <h5 class="title">Title here</h5>
+                <p class="description">
+                  Lorem ipsum dolor sit amet et amet ist ame.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="stories" class="stories">
+        <div class="container">
+          <div class="story">
+            <img src="./assets/images/path.webp" alt="Path">
+
+            <div class="right-col">
+              <h4>The walkways of Indonesia spellbind</h4>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus. 
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+          <div class="story reverse">
+            <img src="./assets/images/beach.webp" alt="Beach">
+
+            <div class="right-col">
+              <h4>Perfect beaches exude relaxation and fun</h4>
+              <p  class="description">
+                Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus. 
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="exploring" class="exploring" style="background: url('../../assets/images/mountain.webp') no-repeat 50% 20% / cover;">
+        <div class="container">
+          <h3>Explore Our Secrets</h3>
+
+          <secrets-slider class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/slides/slide-1.webp" alt="Church">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/slides/slide-2.webp" alt="Children">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/slides/slide-3.webp" alt="Waters">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/slides/slide-1.webp" alt="Church">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/slides/slide-2.webp" alt="Children">
+              </div>
+            </div>
+
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-button-next"></div> -->
+
+            <!-- <span class="icon icon-circle-right arrow arrow-left"></span>
+            <span class="icon icon-circle-right arrow arrow-right"></span> -->
+
+            <div class="swiper-pagination"></div>
+          </secrets-slider>
+        </div>
+
+        <div class="bottom">
+          <div class="container">
+            <h2 class="title">By The Numbers</h2>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+
+            <ul>
+              <li>
+                <h4>100+</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.
+                </p>
+              </li>
+              <li>
+                <h4>43,000+</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo.
+                </p>
+              </li>
+              <li>
+                <h4>30+</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>FOOTER</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </body>
 </html>

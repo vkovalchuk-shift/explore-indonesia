@@ -1,0 +1,62 @@
+.stories {
+    padding: 40px 0 40px 0;
+    color: $color-white;
+    background-color: $color-night;
+
+    @include media('min', 'lg') {
+        padding: 207px 0 305px 0;
+    }
+
+    .story {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 34px;
+        justify-content: space-between;
+
+        &:has(+ .story) {
+            margin-bottom: 56px;
+        }
+
+        @include media('min', 'lg') {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 130px;
+
+            &.reverse {
+                flex-direction: row-reverse;
+            }
+
+            &:has(+ .story) {
+                margin-bottom: 192px;
+            }
+        }
+
+        img {
+            max-width: 630px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .right-col {
+            margin-top: 0;
+            flex-shrink: 0;
+            max-width: 480px;
+            width: 100%;
+
+            @include media('min', 'lg') {
+                margin-top: 0;
+            }
+
+            @include media('min', 'xl') {
+                margin-top: 58px;
+            }
+        }
+
+        .description {
+            @include media('min', 'xl') {
+               max-width: 408px;
+            }
+        }
+    }
+}

@@ -23,8 +23,87 @@ h6 {
   margin: 0;
 }
 
+h1, .h1 {
+  font-family: $font-secondary;
+  font-weight: 900;
+  font-size: 58px;
+  line-height: 63px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+
+  @include media('min', 'lg') {
+    font-size: 120px;
+    line-height: 130px;
+    margin-bottom: 21px;
+  }
+}
+
+h2, .h2 {
+  font-family: $font-primary;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  margin-bottom: 40px;
+
+  @include media('min', 'lg') {
+    font-size: 60px;
+    line-height: 150%;
+  }
+}
+
+h3, .h3 {
+  font-family: $font-primary;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  margin-bottom: 40px;
+  
+  @include media('min', 'lg') {
+    font-size: 50px;
+    line-height: 150%;
+  }
+}
+
+h4, .h4 {
+  font-family: $font-primary;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  margin-bottom: 32px;
+
+  @include media('min', 'lg') {
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+
+h5, .h5 {
+  font-family: $font-primary;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 41px;
+  margin-bottom: 28px;
+}
+
+h6, .h6 {
+
+}
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 32px;
+
+  @include media('min', 'lg') {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
