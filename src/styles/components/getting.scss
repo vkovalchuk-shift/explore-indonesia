@@ -1,0 +1,139 @@
+.getting {
+    padding: 64px 0;
+    color: $color-night;
+    background-color: $color-sky;
+    text-align: center;
+
+    @include media('min', 'sm') {
+        text-align: left;
+    }
+
+    @include media('min', 'lg') {
+        padding: 118px 0;
+    }
+
+    .steps {
+
+    }
+
+    li {
+        display: flex;
+        gap: 8px;
+        position: relative;
+        flex-direction: column;
+
+        @include media('min', 'sm') {
+            flex-direction: row;
+            gap: 24px;
+        }
+
+        @include media('min', 'lg') {
+            gap: 44px;
+        }
+
+        &:not(:last-child) {
+            padding-bottom: 32px;
+
+            @include media('min', 'lg') {
+                padding-bottom: 80px;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 29px;
+                top: 0;
+                bottom: 0;
+                width: 3px;
+                transform: translateX(-50%);
+                background: rgba(21, 20, 57, 0.4);
+                opacity: 0.3;
+                z-index: 1;
+
+                @include media('max', 'lg') {
+                    left: 20px;
+                }
+
+                @include media('max', 'sm') {
+                    content: none;
+                }
+            }
+        }
+
+        .indicator {
+            flex-shrink: 0;
+            background: #DD2242;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 38px;
+            color: $color-white;
+            z-index: 2;
+
+            @include media('max', 'lg') {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            @include media('max', 'sm') {
+                align-self: center;
+            }
+        }
+
+        .instruction {
+            margin-top: 14px;
+
+            @include media('max', 'lg') {
+                margin-top: 0;
+            }
+
+            &-block {
+                display: flex;
+                gap: 45px;
+
+                @include media('max', 'lg') {
+                    flex-direction: column;
+                }
+
+                img {
+                    width: 250px;
+                    height: 166px;
+                    object-fit: cover;
+                    object-position: 50% 70%;
+                    border-radius: 7px;
+                    flex-shrink: 0;
+
+                    @include media('max', 'sm') {
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            &-info {
+                max-width: 455px;
+
+                @include media('max', 'lg') {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        p {
+            font-size: 23px;
+            line-height: 38px;
+            color: rgba(21, 20, 57, 0.4);
+
+            @include media('max', 'lg') {
+                font-size: inherit;
+                line-height: inherit;
+            }
+        }
+    }
+}

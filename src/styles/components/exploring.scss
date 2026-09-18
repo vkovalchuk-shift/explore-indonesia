@@ -1,9 +1,14 @@
 .exploring {
     padding-top: 25px;
     color: $color-night;
+    background: url('../../assets/images/mountain.webp') no-repeat 50% 100% / cover;
 
     @include media('min', 'lg') {
         padding-top: 127px;
+    }
+
+    @include media('min', 'xxl') {
+        background: url('../../assets/images/mountain.webp') no-repeat 50% 50% / cover;
     }
 
     h3 {
