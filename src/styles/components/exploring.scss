@@ -10,9 +10,15 @@
         text-align: center;
     }
 
+    .secrets-slider {
+        display: block;
+        margin-bottom: 933px;
+        position: relative;
+    }
 
     .swiper {
-        margin-bottom: 933px;
+        border-radius: 10px;
+        overflow: hidden;
     }
 
     .swiper-wrapper {
@@ -44,7 +50,7 @@
         &-bullet {
             width: 19px;
             height: 19px;
-            margin: 0 8px;
+            margin: 0 8px !important;
             background-color: $color-bullet;
             opacity: 1;
             transition: $transition-default;
@@ -59,18 +65,45 @@
     }
 
     .arrow {
-        &-left,
-        &-right {
+        width: 15px;
+        cursor: pointer;
+
+        &-prev,
+        &-next {
             position: absolute;
-            top: 50%;
+            top: 90px;
+
+            @include media('min', 'md') {
+                top: 117px;
+            }
         }
 
-        &-left {
-            left: -63px;
+        &-prev {
+            left: -11px;
+            transform: translateX(-100%);
+
+            @include media('min', 'xxl') {
+                left: -63px;
+            }
         }
 
-        &-right {
-            right: -63px;
+        &-next {
+            right: -11px;
+            transform: translateX(100%) rotate(180deg);
+
+            @include media('min', 'xxl') {
+                right: -63px;
+            }
+        }
+
+        &:hover img {
+            filter: brightness(0) saturate(100%)
+                invert(19%)
+                sepia(94%)
+                saturate(4476%)
+                hue-rotate(340deg)
+                brightness(91%)
+                contrast(101%);
         }
     }
 
@@ -78,20 +111,16 @@
         background-color: rgba($color-night, 0.9);
         padding: 70px 0;
         color: $color-white;
+        text-align: center;
 
         @include media('min', 'xl') {
             padding: 201px 0 225px 0;
-        }
-
-        .title {
-            text-align: center;
         }
 
         .description {
             max-width: 484px;
             margin-left: auto;
             margin-right: auto;
-            text-align: center;
         }
 
         ul {
@@ -110,7 +139,6 @@
 
         li {
             max-width: 350px;
-            text-align: center;
 
             h4 {
                 margin-bottom: 19px;
