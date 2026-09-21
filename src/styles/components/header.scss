@@ -8,6 +8,7 @@ header {
     gap: 24px;
     justify-content: space-between;
     z-index: 999;
+    transition: $transition-default;
 
     &.sticky-active {
         backdrop-filter: blur(12px);
@@ -24,7 +25,7 @@ header {
             font-weight: 900;
             font-size: 24px;
             letter-spacing: 0.3px;
-            line-height: 80.5%;
+            line-height: 0.805;
             text-transform: uppercase;
             color: $color-white;
             display: flex;
@@ -99,14 +100,13 @@ header {
     }
 
     .btn-menu {
-        cursor: pointer;
         display: none;
-        flex-direction: column;
-        gap: 4px;
         position: relative;
 
         @include media('max', 'lg') {
             display: flex;
+            flex-direction: column;
+            gap: 4px;
         }
 
         & span,
