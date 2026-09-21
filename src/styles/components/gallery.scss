@@ -1,13 +1,10 @@
-section.gallery {
+.gallery {
     color: $color-night;
-    padding: 32px 0 40px 0;
+    padding: 64px 0;
+    text-align: center;
 
     @include media('min', 'lg') {
         padding: 177px 0 229px 0;
-    }
-
-    h2 {
-        text-align: center;
     }
 
     p {
@@ -15,7 +12,6 @@ section.gallery {
         margin-left: auto;
         margin-right: auto;
         color: $color-grey-dark;
-        text-align: center;
     }
 
     .list {

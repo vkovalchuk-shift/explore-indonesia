@@ -1,6 +1,6 @@
 footer {
     position: relative;
-    padding: 40px 24px;
+    padding: 24px;
     background: $color-night;
     color: $color-white;
     display: flex;
@@ -11,10 +11,6 @@ footer {
 
     @include media('min', 'xl') {
         flex-direction: row;
-    }
-
-    @include media('min', 'xxl') {
-        padding: 39px 153px 31px 83px;
     }
 
     .left {
@@ -39,12 +35,14 @@ footer {
             display: flex;
             align-items: flex-end;
             gap: 7px;
+            text-decoration: none;
 
             img {
                 width: 25px;
             }
 
-            span {
+            mark {
+                background: transparent;
                 color: $color-error;
             }
         }
@@ -95,15 +93,13 @@ footer {
         align-items: center;
         gap: 22px;
 
-        img {
+        a {
+            color: $color-white;
+            text-decoration: none;
+            transition: $transition-default;
+
             &:hover {
-                filter: brightness(0) saturate(100%)
-                    invert(20%)
-                    sepia(90%)
-                    saturate(5000%)
-                    hue-rotate(330deg)
-                    brightness(90%)
-                    contrast(100%);
+                color: $color-error;
             }
         }
     }
@@ -129,11 +125,16 @@ footer {
         top: 0;
         right: 36px;
         transform: translateY(-50%);
+        color: $color-white;
+        text-decoration: none;
+        font-size: 14px;
 
         @include media('min', 'lg') {
             width: 104px;
             height: 104px;
+            top: -20px;
             right: 99px;
+            font-size: 25px;
         }
 
         img {

@@ -1,4 +1,4 @@
-@import "components/style";
+@import "./style";
 @import "components/normalize";
 @import "components/variables";
 @import "components/mixins";
@@ -7,8 +7,8 @@
 @import "components/header";
 @import "components/hero";
 @import "components/stories";
-@import "components/exploring";
-@import "components/video";
+@import "components/stats";
+@import "components/info";
 @import "components/gallery";
 @import "components/getting";
 @import "components/footer";

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title></title>
+    <title>Explore Indonesia</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-title" content="MyWebSite" />
@@ -13,115 +13,130 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
   </head>
 
   <body>
     <header>
       <div class="left">
-        <div class="logo">
+        <a href="/" class="logo">
           <img src="./assets/images/icons/flower.svg" alt="Flower">
           Explore <br> Indonesia
-        </div>
-        <ul class="menu">
-          <li><a href="#">destinations</a></li>
-          <li><a href="#">experiences</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">gallery</a></li>
-        </ul>
+        </a>
+        <nav class="menu">
+          <ul>
+            <li><a href="#stories">destinations</a></li>
+            <li><a href="#stats">experiences</a></li>
+            <li><a href="#info">about</a></li>
+            <li><a href="#gallery">gallery</a></li>
+          </ul>
+        </nav>
       </div>
       <div class="right">
-        <img src="./assets/images/icons/search.svg" alt="Search">
-        <div id="menu-button" class="hamburger"><span></span></div>
+        <button class="btn-search">
+          <img src="./assets/images/icons/search.svg" alt="Search">
+        </button>
+        <div id="btn-menu" class="btn-menu active"><span></span></div>
       </div>
     </header>
     <main>
-      <section id="hero" class="hero" style="background: linear-gradient(215.79deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url('../../assets/images/diego-gutierrez.webp') no-repeat 50% 50% / cover">
+      <section id="hero" class="hero" style="background: linear-gradient(215.79deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url('./assets/images/diego-gutierrez.webp') no-repeat 50% 50% / cover">
         <div class="container">
           <h1>explore <br> indonesia</h1>
           <a href="#" class="btn btn-lg">Start travelling</a>
+        </div>
 
-          <div class="bottom">
+        <div class="bottom">
+          <!-- <div class="container"> -->
             <ul>
               <li>
-                <div class="index">01</div>
+                <div class="index"></div>
                 <h5 class="title">Title here</h5>
-                <p class="description">
+                <div class="description">
                   Lorem ipsum dolor sit amet et amet ist ame.
-                </p>
+                </div>
               </li>
               <li>
-                <div class="index">02</div>
+                <div class="index"></div>
                 <h5 class="title">Title here</h5>
-                <p class="description">
+                <div class="description">
                   Lorem ipsum dolor sit amet et amet ist ame.
-                </p>
+                </div>
               </li>
               <li>
-                <div class="index">03</div>
+                <div class="index"></div>
                 <h5 class="title">Title here</h5>
-                <p class="description">
+                <div class="description">
                   Lorem ipsum dolor sit amet et amet ist ame.
-                </p>
+                </div>
               </li>
             </ul>
-          </div>
+            <div class="video">
+              <img src="./assets/images/island.webp" alt="Island">
+              <div class="play-btn">
+                <span class="icon-play3"></span>
+              </div>
+            </div>
+          <!-- </div> -->
         </div>
       </section>
       <section id="stories" class="stories">
         <div class="container">
-          <div class="story">
+          <div class="item">
             <img src="./assets/images/path.webp" alt="Path">
 
-            <div class="right-col">
+            <aside class="right-col">
               <h4>The walkways of Indonesia spellbind</h4>
               <p class="description">
                 Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus. 
               </p>
               <a href="#" class="btn">Learn More</a>
-            </div>
+            </aside>
           </div>
-          <div class="story reverse">
+          <div class="item">
             <img src="./assets/images/beach.webp" alt="Beach">
 
-            <div class="right-col">
+            <aside class="right-col">
               <h4>Perfect beaches exude relaxation and fun</h4>
               <p  class="description">
                 Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus. 
               </p>
               <a href="#" class="btn">Learn More</a>
-            </div>
+            </aside>
           </div>
         </div>
       </section>
-      <section id="exploring" class="exploring">
-        <div class="container">
-          <h3>Explore Our Secrets</h3>
-
-          <div class="secrets-slider">
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./assets/images/slides/slide-1.webp" alt="Church">
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/images/slides/slide-2.webp" alt="Children">
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/images/slides/slide-3.webp" alt="Waters">
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/images/slides/slide-1.webp" alt="Church">
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/images/slides/slide-2.webp" alt="Children">
+      <section id="stats" class="stats">
+        <div class="top">
+          <div class="container">
+            <h3>Explore Our Secrets</h3>
+  
+            <div class="gallery-slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/images/slides/slide-1.webp" alt="Church">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/slides/slide-2.webp" alt="Children">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/slides/slide-3.webp" alt="Waters">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/slides/slide-1.webp" alt="Church">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/slides/slide-2.webp" alt="Children">
+                  </div>
                 </div>
               </div>
+  
+              <div class="swiper-pagination"></div>
+              
+              <img class="arrow arrow-prev" src="./assets/images/icons/slider-arrow.svg" alt="Prev Button">
+              <img class="arrow arrow-next" src="./assets/images/icons/slider-arrow.svg" alt="Next Button">
             </div>
-
-            <div class="swiper-pagination"></div>
-            
-            <img class="arrow arrow-prev" src="./assets/images/icons/slider-arrow.svg" alt="Prev Button">
-            <img class="arrow arrow-next" src="./assets/images/icons/slider-arrow.svg" alt="Next Button">
           </div>
         </div>
 
@@ -132,31 +147,25 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
 
-            <ul>
-              <li>
+            <div class="row">
+              <div class="col">
                 <h4>100+</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.
-                </p>
-              </li>
-              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.
+              </div>
+              <div class="col">
                 <h4>43,000+</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo.
-                </p>
-              </li>
-              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo.
+              </div>
+              <div class="col">
                 <h4>30+</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.
-                </p>
-              </li>
-            </ul>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="video" class="video" style="background: linear-gradient(215.79deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url('../../assets/images/indonesia.webp') no-repeat 50% 50% / cover">
+      <section id="info" class="info" style="background: linear-gradient(215.79deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url('./assets/images/indonesia.webp') no-repeat 50% 50% / cover">
         <div class="container">
           <h4>Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.</h4>
 
@@ -164,7 +173,7 @@
             <img src="./assets/images/crowding.webp" alt="Crowding">
 
             <div class="play-btn">
-              <img src="./assets/images/icons/play-button.svg" alt="Play Button">
+              <span class="icon-play3"></span>
             </div>
           </div>
 
@@ -226,10 +235,8 @@
 
           <ul class="steps">
             <li>
-              <div class="indicator">
-                1
-              </div>
-              <div class="instruction">
+              <div class="index"></div>
+              <div class="item">
                 <h5>Bookings your flights</h5>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius. Sed euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor, lobortis enim.
@@ -237,19 +244,17 @@
               </div>
             </li>
             <li>
-              <div class="indicator">
-                2
-              </div>
-              <div class="instruction">
+              <div class="index"></div>
+              <div class="item">
                 <h5>Choosing your hotel</h5>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius. Sed euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor, lobortis enim.
                 </p>
 
-                <div class="instruction-block">
+                <div class="item-block">
                   <img src="./assets/images/honda.webp" alt="Honda">
 
-                  <div class="instruction-info">
+                  <div class="item-info">
                     <h5>Travelling there</h5>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt.
@@ -259,10 +264,8 @@
               </div>
             </li>
             <li>
-              <div class="indicator">
-                3
-              </div>
-              <div class="instruction">
+              <div class="index"></div>
+              <div class="item">
                 <h5>Planning your experiences</h5>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius. 
@@ -276,22 +279,28 @@
     </main>
     <footer>
       <div class="left">
-        <div class="logo">
+        <a href="/" class="logo">
           <img src="./assets/images/icons/flower.svg" alt="Flower">
-          <div><span>Explore <br></span> Indonesia</div>
-        </div>
+          <div><mark>Explore <br></mark> Indonesia</div>
+        </a>
         <ul class="menu">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Company</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="#hero">About</a></li>
+          <li><a href="#stories">Pricing</a></li>
+          <li><a href="#info">Company</a></li>
+          <li><a href="#gallery">Blog</a></li>
         </ul>
       </div>
       <div class="right">
         <ul class="socials">
-          <li><a href="#"><img src="./assets/images/icons/facebook.svg" alt="Facebook"></a></li>
-          <li><a href="#"><img src="./assets/images/icons/linkedin.svg" alt="LinkedIn"></a></li>
-          <li><a href="#"><img src="./assets/images/icons/google.svg" alt="Google"></a></li>
+          <li><a href="#">
+            <span class="icon-facebook"></span>
+          </a></li>
+          <li><a href="#">
+            <span class="icon-linkedin2"></span>
+          </a></li>
+          <li><a href="#">
+            <span class="icon-google"></span>
+          </a></li>
         </ul>
 
         <div class="copyright">
@@ -300,7 +309,7 @@
       </div>
 
       <a href="#hero" id="to-top" class="to-top">
-        <img src="./assets/images/icons/up-arrow.svg" alt="Back to Top">
+        <span class="icon-circle-up"></span>
       </a>
     </footer>
 
