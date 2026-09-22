@@ -1,15 +1,17 @@
-.getting {
+.path {
     padding: 64px 0;
     color: $color-night;
     background-color: $color-sky;
     text-align: left;
 
     @include media('min', 'lg') {
-        padding: 118px 0;
+        padding: 110px 0;
     }
 
     ul {
         counter-reset: item;
+        max-width: 1124px;
+        margin: 0 auto;
     }
 
     li {
@@ -31,10 +33,10 @@
             padding-bottom: 32px;
 
             @include media('min', 'lg') {
-                padding-bottom: 80px;
+                padding-bottom: 50px;
             }
 
-            &::before {
+            &::after {
                 content: '';
                 position: absolute;
                 left: 27px;
@@ -42,7 +44,7 @@
                 bottom: 0;
                 width: 4px;
                 background: rgba(21, 20, 57, 0.4);
-                opacity: 0.3;
+                opacity: .3;
                 z-index: 1;
 
                 @include media('max', 'lg') {
@@ -51,7 +53,8 @@
             }
         }
 
-        .index {
+        &::before {
+            content: counter(item);
             flex-shrink: 0;
             background: #DD2242;
             width: 58px;
@@ -66,11 +69,8 @@
             color: $color-white;
             z-index: 2;
 
-            &::before {
-                content: counter(item);
-            }
-
             @include media('max', 'lg') {
+                left: 18px;
                 width: 40px;
                 height: 40px;
                 font-size: 20px;
@@ -88,6 +88,7 @@
             &-block {
                 display: flex;
                 gap: 45px;
+                margin-top: 100px;
 
                 @include media('max', 'lg') {
                     flex-direction: column;
@@ -104,6 +105,10 @@
                     @include media('max', 'sm') {
                         margin: 0 auto;
                     }
+                }
+
+                h5 {
+                    margin-bottom: 20px;
                 }
             }
 

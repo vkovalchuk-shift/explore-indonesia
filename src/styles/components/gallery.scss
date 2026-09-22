@@ -4,7 +4,11 @@
     text-align: center;
 
     @include media('min', 'lg') {
-        padding: 177px 0 229px 0;
+        padding: 157px 0 229px 0;
+    }
+
+    h2 {
+        margin-bottom: 23px;
     }
 
     p {
@@ -15,7 +19,8 @@
     }
 
     .list {
-        margin-top: 71px;
+        max-width: 1164px;
+        margin: 63px auto 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;

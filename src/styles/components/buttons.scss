@@ -1,5 +1,4 @@
 .btn {
-    max-width: 100%;
     cursor: pointer;
     display: inline-block;
     padding: 23px 24px;
@@ -7,7 +6,7 @@
     border-radius: 100px;
     font-weight: 700;
     font-size: 18px;
-    line-height: 150%;
+    line-height: 1.5;
     color: $color-white;
     text-decoration: none;
     outline: none;
@@ -40,9 +39,5 @@
     &:active {
         transform: translateY(0);
         box-shadow: none;
-    }
-
-    @include media('min', 'sm') {
-        max-width: unset;
     }
 }

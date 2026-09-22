@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const menuTriggers = document.querySelectorAll('#btn-menu, nav a');
   
   menuTriggers.forEach(menuTrigger => {
-    menuTrigger.onclick = function(e) {
+    menuTrigger.onclick = function() {
       header.classList.toggle('active');
     }
-  })
+  });
 
   window.addEventListener('scroll', () => {
     header.classList.toggle('sticky-active', window.scrollY >= header.offsetHeight);

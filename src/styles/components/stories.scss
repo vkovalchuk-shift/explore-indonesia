@@ -20,7 +20,7 @@
 
         @include media('min', 'lg') {
             flex-direction: row;
-            gap: 130px;
+            gap: 75px;
 
             &:nth-child(even) {
                 flex-direction: row-reverse;
@@ -39,7 +39,7 @@
 
         .right-col {
             flex-shrink: 0;
-            max-width: 480px;
+            max-width: 405px;
             width: 100%;
         }
     }

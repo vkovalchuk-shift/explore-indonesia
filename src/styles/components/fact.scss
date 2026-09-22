@@ -1,0 +1,45 @@
+.fact {
+    padding: 64px 0;
+    position: relative;
+
+    @include media('min', 'lg') {
+        padding: 257px 0;
+    }
+
+    .inner {
+        max-width: 614px;
+        margin: 0 auto;
+        text-align: center;
+
+        p {
+            color: $color-grey-dark;
+        }
+    }
+
+    img {
+        position: absolute;
+        width: auto;
+        z-index: -1;
+        animation: blipping .3s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .left-img {
+        inset: 0 auto 0 0;
+        display: none;
+
+        @include media('min', 'lg') {
+            display: block;
+        }
+    }
+
+    .right-img {
+        inset: auto 0 0 auto;
+        height: 100%;
+        opacity: 0.5;
+
+        @include media('min', 'lg') {
+            height: auto;
+            opacity: 1;
+        }
+    }
+}

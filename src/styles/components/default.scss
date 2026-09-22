@@ -13,7 +13,7 @@ html {
 body {
   position: relative;
   overflow-x: hidden;
-  font-family: $font-primary;
+  font-family: $font-default;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -38,4 +38,12 @@ img {
   max-width: 1277px;
   margin: 0 auto;
   padding: 0 16px;
+
+  &-sm {
+    max-width: 1056px;
+  }
+
+  &-lg {
+    max-width: 1432px;
+  }
 }

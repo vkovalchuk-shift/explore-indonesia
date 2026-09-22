@@ -11,8 +11,8 @@
         padding-top: 25px;
 
         @include media('min', 'lg') {
-            min-height: 1414px;
-            padding-top: 127px;
+            min-height: 1406px;
+            padding-top: 110px;
         }
     }
 
@@ -126,7 +126,7 @@
         text-align: center;
 
         @include media('min', 'xl') {
-            padding: 201px 0 225px 0;
+            padding: 181px 0 213px 0;
         }
 
         .description {

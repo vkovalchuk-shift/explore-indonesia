@@ -36,7 +36,9 @@
         <button class="btn-search">
           <img src="./assets/images/icons/search.svg" alt="Search">
         </button>
-        <div id="btn-menu" class="btn-menu active"><span></span></div>
+        <button class="btn-menu" id="btn-menu">
+          <span></span>
+        </button>
       </div>
     </header>
     <main>
@@ -160,8 +162,25 @@
         </div>
       </section>
 
-      <section id="info" class="info" style="background: linear-gradient(215.79deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url('./assets/images/indonesia.webp') no-repeat 50% 50% / cover">
+      <section id="fact" class="fact">
+        <img class="left-img" src="./assets/images/lines-left.webp" alt="Left Decoration Lines">
+        <img class="right-img" src="./assets/images/lines-right.webp" alt="Right Decoration Lines">
+
         <div class="container">
+          <div class="inner">
+            <h4>
+              Our hills and valleys are like nothing you’ve seen.
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet magna commodo, tempus dolor sit amet, laoreet elit. Donec mauris tortor.
+            </p>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="info" class="info" style="background: linear-gradient(215.79deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url('./assets/images/indonesia.webp') no-repeat 50% 50% / cover">
+        <div class="container container-sm">
           <h4>Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.</h4>
 
           <div class="video">
@@ -171,13 +190,14 @@
               <span class="icon-play3"></span>
             </div>
           </div>
-
+        </div>
+        <div class="container">
           <div class="items">
             <div class="item">
               <img src="./assets/images/indonesia-small.webp" alt="Indonesia">
-
+  
               <div class="col">
-                <p class="title">In The Country</p>
+                <p class="name">In The Country</p>
                 <p class="description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus.
                 </p>
@@ -185,9 +205,9 @@
             </div>
             <div class="item">
               <img src="./assets/images/megapolis.webp" alt="Indonesia">
-
+  
               <div class="col">
-                <p class="title">In The Country</p>
+                <p class="name">In The Country</p>
                 <p class="description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus.
                 </p>
@@ -224,13 +244,12 @@
         </div>
       </section>
 
-      <section id="getting" class="getting">
+      <section id="path" class="path">
         <div class="container">
           <h2>Getting there</h2>
 
           <ul class="steps">
             <li>
-              <div class="index"></div>
               <div class="item">
                 <h5>Bookings your flights</h5>
                 <p>
@@ -239,7 +258,6 @@
               </div>
             </li>
             <li>
-              <div class="index"></div>
               <div class="item">
                 <h5>Choosing your hotel</h5>
                 <p>
@@ -259,7 +277,6 @@
               </div>
             </li>
             <li>
-              <div class="index"></div>
               <div class="item">
                 <h5>Planning your experiences</h5>
                 <p>

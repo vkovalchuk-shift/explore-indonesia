@@ -4,12 +4,15 @@
 @import "components/mixins";
 @import "components/default";
 @import "components/typo";
+@import "components/animations.scss";
 @import "components/header";
 @import "components/hero";
 @import "components/stories";
 @import "components/stats";
+@import "components/fact";
 @import "components/info";
 @import "components/gallery";
-@import "components/getting";
+@import "components/path";
 @import "components/footer";
 @import "components/buttons.scss";
+@import "components/play-btn.scss";
